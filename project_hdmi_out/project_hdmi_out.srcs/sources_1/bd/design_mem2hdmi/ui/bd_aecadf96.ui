@@ -1,0 +1,34 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port MB_RESET -pg 1 -y 420 -defaultsOSRD -right
+preplace port SYS_CLK_IN -pg 1 -y 560 -defaultsOSRD -right
+preplace port TMDS_OUT -pg 1 -y 230 -defaultsOSRD
+preplace port S_AXI_LITE_VDMA -pg 1 -y 140 -defaultsOSRD
+preplace port S_AXI_LITE_VTC -pg 1 -y 360 -defaultsOSRD
+preplace port M_AXI_MM2S_VDMA -pg 1 -y 110 -defaultsOSRD
+preplace port AXI_RESETN -pg 1 -y 500 -defaultsOSRD
+preplace port AXI_ACLK -pg 1 -y 190 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 1 -y 440 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 3 -y 230 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 3 530 110 NJ 110 NJ
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 2 1 N
+preplace netloc ctrl_0_1 1 0 1 N
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 1 1 NJ
+preplace netloc axi_resetn_0_1 1 0 1 -20J
+preplace netloc rgb2dvi_0_TMDS 1 3 1 N
+preplace netloc aRst_0_1 1 1 3 560 420 860J 420 NJ
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 0 3 -10 570 N 570 840
+preplace netloc s_axi_lite_aclk_0_1 1 0 2 -30J 290 560
+preplace netloc clk_in1_0_1 1 1 3 560J 560 NJ 560 NJ
+preplace netloc clk_wiz_0_clk_out1 1 0 3 -10 300 540 130 850
+preplace netloc S_AXI_LITE_0_1 1 0 1 NJ
+preplace netloc v_tc_0_vtiming_out 1 1 1 550J
+levelinfo -pg 1 -50 350 710 960 1090 -top -10 -bot 720
+",
+}
+

@@ -1,0 +1,44 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 130 -defaultsOSRD
+preplace port TMDS_OUT -pg 1 -y 430 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 680 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 150 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 3 -y 180 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -y 170 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 5 -y 430 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 150 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 670 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 390 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 180 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 4 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 370 10 NJ 10 NJ 10 NJ 10 1830
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 1 N
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 390 310 660 80 1060J
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 3 1 1040
+preplace netloc axi_smc_M00_AXI 1 4 1 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 290 NJ 290 NJ 290 NJ 290 NJ 290 1820
+preplace netloc sys_clock_1 1 0 2 NJ 680 NJ
+preplace netloc rgb2dvi_0_TMDS 1 5 1 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 670
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 2 3 680 590 NJ 590 1340
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc clk_wiz_0_clk_out1 1 2 3 670 550 1050 600 1360
+preplace netloc Net 1 1 4 380 610 NJ 610 NJ 610 1350
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 300 380 300 680 280 1050 240 1340 280 1830
+preplace netloc v_tc_0_vtiming_out 1 3 1 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 650
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 370
+levelinfo -pg 1 0 200 520 860 1200 1590 1850 -top 0 -bot 730
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_board_cnt: "2",
+   da_ps7_cnt: "1",
+}

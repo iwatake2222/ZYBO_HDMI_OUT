@@ -10,7 +10,21 @@ https://translate.google.com/translate?hl=ja?sl=en&sl=ja&tl=en&u=https%3A%2F%2Fq
 - HostPC: Windows 10 64-bit
 	- Vivado 2017.4 WebPACK
 	- Xilinx SDK 2017.4
-- Target Board: ZYBO (Z7-20)
+- Target Board:
+	- ZYBO (Z7-20)
+- Third party IP library:
+	- Digilent Vivado library (https://github.com/Digilent/vivado-library)
+
+## How to import this block design to your own project
+- Download Digilent Vivado library (https://github.com/Digilent/vivado-library)
+- Add Digilent Vivado library to IP Repositories in your project
+	- PROJECT MANAGER -> Settings -> IP -> Repository. Then add the directory you downloaded
+- Copy "design_mem2hdmi.tcl" to your local work space (e.g. c:/work)
+- In Tcl Console, run the following command:
+	- `cd c:/work`
+	- `source design_mem2hdmi.tcl`
+
+__Make sure you use the same version of Vivado (2017.4)__
 
 ## Project structure
 - ip_repo\vivado-library\
@@ -21,7 +35,7 @@ https://translate.google.com/translate?hl=ja?sl=en&sl=ja&tl=en&u=https%3A%2F%2Fq
 		- you can use this as a sample project
 	- design_mem2hdmi.bd
 		- block design including IPs related to HDMI output (vdma, vtc, rgb2dvi)
-		- just for a reference (I wanted to package this as IP, but I couldn't manage it...)
+		- `design_mem2hdmi.tcl` is made from this block design
 - project_hdmi_out.sdk\
 	- C application to display two image buffers (solid color image and color bar image)
 
